@@ -17,6 +17,7 @@
   "author": "Ganesh Pandey",
   "license": "ISC",
   "dependencies": {
+    "assync": "^1.0.4",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
