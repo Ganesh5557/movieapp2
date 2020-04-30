@@ -12,11 +12,12 @@ const connect = mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUn
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
-  app.use(cors())
+  
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(cors());
 
 app.use('/api/users', require('./routes/users'));
 app.use('/api/comment', require('./routes/comment'));
